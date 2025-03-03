@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer</title>
+    <style>
+        /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and background styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    padding: 30px;
+    margin: 20px 0;
+}
+
+section h1, section h2 {
+    color: #333;
+}
+
+/* Projects section */
+.project {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+/* Scroll to top button */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .project {
+        margin: 10px 0;
+        padding: 15px;
+    }
+}
+
+    </style>
+    <link rel="stylesheet" href="C:\Users\dhanya\Documents\Portfolio\styles.css">
+    <script src= "C:\Users\dhanya\Documents\Portfolio\custom.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Write a brief introduction about yourself. Mention your background, interests, and what you're passionate about in web development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: My Website</h3>
+            <p>Description of your project. What problem does it solve? Technologies used?</p>
+            <a href="https://link-to-your-project.com">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: To-Do App</h3>
+            <p>Description of your project.</p>
+            <a href="https://link-to-your-project.com">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name</p>
+    </footer>
+    <button id="scrollTopBtn" title="Go to top">Top</button>
+    <script>
+        // Get the button
+        var mybutton = document.getElementById("scrollTopBtn");
+    
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+    
+        // When the user clicks the button, scroll to the top of the document
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        };
+    </script>
+    
+</body>
+</html>
